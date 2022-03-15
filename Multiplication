@@ -1,0 +1,12 @@
+# include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+  double a,b;
+  cout<<"Enter 2 floating point numbers";
+  cin>>a;cin>>b;
+  double c=a*b;
+  cout<<c;
+
+	return 0;
+}
