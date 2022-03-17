@@ -1,0 +1,38 @@
+# include <bits/stdc++.h>
+using namespace std;
+
+int CheckPrime(int a)
+{
+   int c;
+ 
+   for ( c = 2 ; c <= a - 1 ; c++ )
+   { 
+      if ( a%c == 0 )
+     return 0;
+   }
+   return 1;
+}
+int main(){
+    int n;
+    cout<<"Input Number: ";
+    cin>>n;    
+    int m=n+(n%2);
+    m/=2;
+    cout<<"Output\n";
+    if(n>1){
+        
+        for(int i=2;i<=m;i++){
+        
+        if(CheckPrime(i) && CheckPrime(n-i)){
+            cout<<n<<" = "<<i<<" + "<<n-i<<"\n";
+        }
+        else{
+            
+           
+        }
+
+        }
+    }
+    else cout<<"No prime pair exsists";
+    return 0;
+}
