@@ -1,0 +1,15 @@
+# include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+int Hour,Minute,Seconds;
+  cout<<"Enter Hour";cin>>Hour;
+  cout<<"Enter Minute";cin>>Minute;
+  cout<<"Enter Seconds";cin>>Seconds;
+  cout<<"You Entered\n"<<Hour<<":";
+    (Minute>9)?(cout<<Minute):(cout<<"0"<<Minute);
+    cout<<":";(Seconds>9)?(cout<<Seconds):(cout<<"0"<<Seconds);
+    cout<<"\nTotal time is\n"<<3600*Hour+60*Minute+Seconds;
+    
+    return 0;
+}
